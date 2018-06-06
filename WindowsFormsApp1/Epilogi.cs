@@ -47,5 +47,10 @@ namespace WindowsFormsApp1
             //System.Threading.Thread.Sleep(1000);
             this.Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

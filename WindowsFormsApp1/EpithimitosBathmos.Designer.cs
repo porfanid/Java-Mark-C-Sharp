@@ -41,6 +41,7 @@
             this.Enter = new System.Windows.Forms.Button();
             this.NotNumber = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.NotNumber)).BeginInit();
             this.SuspendLayout();
             // 
@@ -128,7 +129,7 @@
             this.Enter.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.Enter.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Enter.ForeColor = System.Drawing.Color.Black;
-            this.Enter.Location = new System.Drawing.Point(385, 338);
+            this.Enter.Location = new System.Drawing.Point(271, 275);
             this.Enter.Name = "Enter";
             this.Enter.Size = new System.Drawing.Size(131, 43);
             this.Enter.TabIndex = 12;
@@ -145,10 +146,21 @@
             // panel1
             // 
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.Location = new System.Drawing.Point(0, -3);
+            this.panel1.Location = new System.Drawing.Point(0, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(300, 150);
             this.panel1.TabIndex = 23;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(483, 275);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(80, 43);
+            this.button1.TabIndex = 24;
+            this.button1.Text = "Άκυρο";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // EpithimitosBathmos
             // 
@@ -156,6 +168,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label1);
@@ -188,5 +201,6 @@
         private System.Windows.Forms.Button Enter;
         private System.Windows.Forms.ErrorProvider NotNumber;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button1;
     }
 }

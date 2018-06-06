@@ -73,5 +73,10 @@ namespace WindowsFormsApp1
                 label6.Text = "Wrong input. Please try again.";
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
